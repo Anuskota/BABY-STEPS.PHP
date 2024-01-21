@@ -71,6 +71,37 @@ function get_country(){
 };
 get_country();
 
+//Agrega un valor tipo string al array que creaste anteriormente e imprime en pantalla. 
+
+$comidaFavorita [] = "patatas fritas";
+print_r($comidaFavorita);
+
+//Ahora agrega 2 elementos más a tu array e imprime en pantalla.
+array_push($comidaFavorita,"3", "cocido");
+print_r($comidaFavorita);
+
+//Crea un nuevo array y concaténalo con el anterior e imprime en pantalla.
+
+$bebidaFavorita = ["cerveza", "agua", "vino", "sidra"];
+
+$resultadoArray = array_merge($comidaFavorita,$bebidaFavorita);
+print_r($resultadoArray);
+
+//Crear una función que imprima en consola y pantalla todos los números de un array en una lista
+
+
+function misNumerosFavoritos() {
+    $numbers = [4, 17, 6, 78, 22, 1, 25, 221, 44];
+    return $numbers;
+}
+print_r(misNumerosFavoritos());
+
+//Crear una función que añade un número al array
+
+
+
+
+
 
 
 

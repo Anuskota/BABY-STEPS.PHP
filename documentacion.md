@@ -50,3 +50,30 @@ Es el nivel de acceso más restrictivo. Sirve para indicar que esa variable sól
 
 Modificador Protected:
 Este indica un nivel de acceso medio y un poco más especial que los anteriores. Sirve para que el método o atributo sea público dentro del código de la propia clase y de cualquier clase que herede de aquella donde está el método o propiedad protected. Es privado y no accesible desde cualquier otra parte. Es decir, un elemento protected es público dentro de la propia clase y en sus heredadas.
+
+BBDD
+
+INSERT INTO `php-steps` (`id`, `nombre`, `email`, `direccion`, `telefono`, `contraseña`, `fecha`) VALUES ('1', 'Anuski', 'tti@gmail.co ', 'rio chatin 55', '988473627', 'hhhdehehe', '2024-01-22');
+
+Como conectar un php a una base de datos 
+$conn = mysqli_connect($servername, $username, $password, $database);
+<?php
+
+$conexion=mysqli_connect("localhost", "root", "", "nombre  de la tabla de la base de datos");
+
+localhost es mi servidor, root mi usuario, las comillas vacias iria la contraseña que haya puesto en mi XAMM, yo de momento no he puesto, y por ultimo el nombre de la tabla de la base de datos
+
+// Check connection
+if (!$conn) {
+    die("Connection failed: " . mysqli_connect_error());
+}
+echo "Connected successfully";
+mysqli_close($conn);
+?>
+
+¿Cómo se manejan las excepciones en PHP y cuál es la estructura básica de un bloque
+try-catch?
+
+
+
+?>
